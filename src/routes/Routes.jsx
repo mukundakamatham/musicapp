@@ -1,9 +1,9 @@
 import React from "react";
 import { Link, Route, Switch } from "react-router-dom";
-import {Navbar} from "../components/navbar"
+import {Music} from "../components/navbar"
 import {SongsList} from "../components/songs";
 import {LoginPage} from "../components/login";
-import {SigninPage} from "../components/signin";
+import {SigninPage} from "../components/signup";
 function Routes() {
   return (
     <>
@@ -12,7 +12,7 @@ function Routes() {
 
       <Switch>
         <Route exact path="/">
-          <Navbar />
+          <Music />
           </Route>
           <Route path='/productss/:id'>
           <SongsList/>
