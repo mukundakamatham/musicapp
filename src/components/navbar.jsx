@@ -6,7 +6,7 @@ export  const Music=()=>{
 
 const [input, setinput] = useState("");
   UseEffect(() => {
-    getUser()
+    getUsers()
   
 }, [])
 const [data, setdata] = useState([])
@@ -23,6 +23,17 @@ async function getUser() {
   }
 
  
+async function getUsers() {
+  try {
+    const response = await axios.get(`http://localhost:2345/album/`);
+    setdata(response);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+
+
 
     return(
 <>
