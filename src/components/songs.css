@@ -1,0 +1,14 @@
+#con{
+    display:flex;
+    flex-direction: row;
+    border: 1px solid grey;
+    height: 50px;
+    width: 90%;
+    margin :50px;
+}
+#song{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
